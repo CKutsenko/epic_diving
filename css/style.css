@@ -1348,7 +1348,8 @@ address {
   background-color: #e86b0c;
 }
 
-.row blockqoute {
+.row blockqoute,
+.row p {
   font-size: 16px;
 }
 
@@ -1370,6 +1371,37 @@ address {
 .copyright-name {
   display: inline-block;
 }
+
+.nav-courses {
+ background-color: #13152e;
+}
+
+.page_number li {
+  display: inline-block;
+}
+
+.about-courses {
+  background-image: url(../img/bg_promo-course.jpg);
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.materials,
+.storage,
+.insurance {
+  display: none;
+}
+
+.promo-courses {
+  text-align: center;
+  background-image: url(../img/bg_call.jpg);
+  color: white;
+  font-size: 20px;
+}
+
+
+
 @media (min-width: 1200px){
 .nav-wrapper {
   position: absolute;
