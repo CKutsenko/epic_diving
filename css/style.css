@@ -1293,16 +1293,83 @@ address {
 /*----------------------------------------------------------------------------*\
   Свои стили
 \*----------------------------------------------------------------------------*/
+.page-header {
+
+}
+
 .page-header-top {
   min-height: 100px;
 }
+
 .nav-wrapper {
   background-color: yellow;
 }
+
 .header-slogan p {
   font-size: 16px;
 }
 
+.header-bg {
+  background-image: url(../img/bg_header_index.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-img,
+.team .container-fluid {
+  display: flex;
+}
+
+.team-block {
+  margin: 2px;
+}
+
+.team-block:first-of-type {
+  margin-left: 0;
+}
+
+.team-block:last-of-type {
+  margin-right: 0;
+}
+
+.team .container-fluid,
+.promo .container-fluid {
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.slogan {
+  text-align: center;
+}
+
+.review {
+  background-color: #e86b0c;
+}
+
+.row blockqoute {
+  font-size: 16px;
+}
+
+.review-2,
+.review-3 {
+  display: none;
+}
+
+.index-footer {
+  background-image: url(../img/bg_index_footer.jpg);
+  color: white;
+}
+
+.social-links a{
+  display: inline-block;
+  float: right;
+}
+
+.copyright-name {
+  display: inline-block;
+}
 @media (min-width: 1200px){
 .nav-wrapper {
   position: absolute;
@@ -1312,10 +1379,11 @@ address {
   }
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
 
 }
 
 @media (min-width: 320px{
-
+*/
 }
+
