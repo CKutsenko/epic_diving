@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
     <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> -->
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,7 +11,10 @@
   </head>
   <body>
 
-    <!-- ----------------------------------------------------------------------------Header---------------------------------------------------------------------------- -->
+
+
+    <!-- HEADER -->
+
 
 
     <header class="page-header">
@@ -23,34 +26,43 @@
                 <a href="javascript:void(0)"><img src="img/logotype.png" alt="Логотип"></a>
               </div>
             </div>
+
             <div class="col-xs-7 col-sm-3 col-lg-2 col-lg-push-8">
- <div class="phone-btn">
+              <div class="phone-btn">
                 <a href="tel:79111234565" class="">+7 911 123-45-65</a>
                 <p>
                   <a href="tel:5471289" class="">547-12-89</a>
                 </p>
-</div>
-            </div>
-            <nav class="col-sm-12 col-lg-8 col-lg-pull-2">
-              <ul class="nav  nav-wrapper">
-                <li><a class="nav-item" href="">Дайвинг</a></li>
-                <li><a class="nav-item" href="">Места</a></li>
-                <li><a class="nav-item" href="">Команда</a></li>
-                <li><a class="nav-item" href="">Проживание</a></li>
-                <li><a class="nav-item" href="">Контакты</a></li>
-              </ul>
-              <div class="hamburger">
-                <span></span>
               </div>
-            </nav>
+            </div>
 
-            <div class="row">
-              <div class="header-slogan">
-                <div class="col-xs-12">
-                  <h1>Diving Dahab</h1>
-                  <h2>Погрузитесь в мир волнительных приключений
-                    вдали от суеты большого города</h2>
-                </div>
+            <a href="" id="toggler" class="container toggler-container visible-xs-block overflow-hidden">
+              <div class="toggler" >
+                <span>
+                </span>
+              </div>
+            </a>
+            <div class="col-xs-12 col-lg-8 col-lg-pull-2">
+              <nav class="main-nav" id="mainNav">
+                <ul class="">
+                  <li class="nav-item"><a href="">Дайвинг</a></li>
+                  <li class="nav-item"><a href="">Места</a></li>
+                  <li class="nav-item"><a href="">Команда</a></li>
+                  <li class="nav-item"><a href="">Проживание</a></li>
+                  <li class="nav-item"><a href="">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="header-slogan">
+              <div class="col-xs-12">
+                <h1>Diving Dahab</h1>
+                <h2><span>Погрузитесь в мир</span>
+                  <br><span>волнительных приключений</span>
+                  <br><span>вдали от суеты большого города</span>
+                </h2>
               </div>
             </div>
           </div>
@@ -58,7 +70,11 @@
       </div>
     </header>
 
-    <!-- ----------------------------------------------------------------------------Main---------------------------------------------------------------------------- -->
+
+
+    <!-- MAIN -->
+
+
 
     <main>
 
@@ -74,17 +90,17 @@
               вы запомните на всю жизнь. </p>
 
             <div class="row">
-<div class="about-item-block">
-              <div class="col-xs-12 col-sm-6">
-                <div class="about-item  about-item-wifi">Бесплатный Wi-Fi</div>
-                <div class="about-item  about-item-message">Русскоговорящая команда</div>
-              </div>
+              <div class="about-item-block">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="about-item  about-item-wifi">Бесплатный Wi-Fi</div>
+                  <div class="about-item  about-item-message">Русскоговорящая команда</div>
+                </div>
 
-              <div class="col-xs-12 col-sm-6">
-                <div class="about-item  about-item-books">Необходимые материалы</div>
-                <div class="about-item  about-item-vacation">Зона для отдыха</div>
+                <div class="col-xs-12 col-sm-6">
+                  <div class="about-item  about-item-books">Необходимые материалы</div>
+                  <div class="about-item  about-item-vacation">Зона для отдыха</div>
+                </div>
               </div>
-</div>
             </div>
 
           </div>
@@ -96,9 +112,9 @@
             </div>
 
             <div class="row about-img">
-              <div class="about-img-thin hidden-xs"><img src="img/about_photo3.jpg" alt=""></div>
-              <div class="about-img-thin hidden-xs"><img src="img/about_photo4.jpg" alt=""></div>
-              <div class="about-img-thin hidden-xs"><img src="img/about_photo5.jpg" alt=""></div>
+              <div class="about-img-thin visible-lg"><img src="img/about_photo3.jpg" alt=""></div>
+              <div class="about-img-thin visible-lg"><img src="img/about_photo4.jpg" alt=""></div>
+              <div class="about-img-thin visible-lg"><img src="img/about_photo5.jpg" alt=""></div>
             </div>
 
           </div>
@@ -110,40 +126,34 @@
       <!-- Promo -->
 
 
-<div class="promo">
-  <div class="container-fluid">
-    <div class="row">
+      <div class="promo">
+        <div class="container-fluid">
+          <div class="row">
 
-      <div class="col-xs-12 col-sm-4">
-        <div class="promo-discription-courses">
-          <img class="promo-discription" src="img/promo_diving.jpg" alt="">
+            <div class="col-xs-12 col-sm-4">
+              <div class="promo-discription-courses">
+                <h2>Курсы</h2>
+                <p>Начните обучение в нашей школе по программе PADI</p>
+              </div>
+            </div>
 
-          <h2>Курсы</h2>
-          <p>Начните обучение в нашей школе по программе PADI</p>
+            <div class="col-xs-12 col-sm-4">
+              <div class="promo-discription-places">
+                <h2>Места</h2>
+                <p>Изучите все места для погружений в окрестностях Дахаба</p>
+              </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+              <div class="promo-discription-hotel">
+                <h2>Проживание</h2>
+                <p>Посмотрите наши специальные предложения на отели</p>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
-
-      <div class="col-xs-12 col-sm-4">
-        <div class="promo-discription-places">
-          <img class="promo-discription" src="img/promo_places.jpg" alt="">
-
-          <h2>Места</h2>
-          <p>Изучите все места для погружений в окрестностях Дахаба</p>
-        </div>
-      </div>
-
-      <div class="col-xs-12 col-sm-4">
-        <div class="promo-discription-hotel">
-          <img class="promo-discription" src="img/promo_hotel.jpg" alt="">
-
-          <h2>Проживание</h2>
-          <p>Посмотрите наши специальные предложения на отели</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</div>
 
 
       <!-- Promo-slogan -->
@@ -158,7 +168,7 @@
                 на предполагаемую дату начала погружений, а мы перезвоним тебе, обсудим детали и ответим
                 на все твои вопросы!</p>
               <p class="hidden-xs">Если дайвинг - это то, о чем ты так давно мечтал,  то пришло время действовать - просто оставь заявку  на предполагаемую дату начала погружений, а мы перезвоним тебе, обсудим детали и ответим на все твои вопросы!</p>
-             <a class="slogan-btn" href="">Записаться</a>
+              <a class="slogan-btn" href="">Записаться</a>
             </div>
           </div>
         </div>
@@ -216,9 +226,10 @@
               <div class="row">
                 <div class="review review-1">
                   <img src="img/review_img.jpg" alt="" class="col-lg-3 col-sm-5 hidden-xs">
+                  <span class="review-name hidden-xs">Маша, 31 год</span>
                   <blockqoute class="col-lg-8 col-sm-7 col-xs-12">Здорово, что ребята все русскоязычные. Приезжаешь и чувствуешь себя как дома,
                     в хорошем смысле. <!-- Место тихое и спокойное,
-                    нет массового ополчения туристов - это подкупает. --></blockqoute>
+                   нет массового ополчения туристов - это подкупает. --></blockqoute>
                 </div>
               </div>
 
@@ -227,7 +238,7 @@
                   <img src="img/review_img.jpg" alt="" class="col-lg-3 col-sm-5 hidden-xs">
                   <blockqoute class="col-lg-8 col-sm-7 col-xs-12">Здорово, что ребята все русскоязычные. Приезжаешь и чувствуешь себя как дома,
                     в хорошем смысле. <!-- Место тихое и спокойное,
-                    нет массового ополчения туристов - это подкупает. --></blockqoute>
+                  нет массового ополчения туристов - это подкупает. --></blockqoute>
                 </div>
               </div>
 
@@ -248,56 +259,72 @@
 
     </main>
 
-    <!-- ----------------------------------------------------------------------------Footer---------------------------------------------------------------------------- -->
+
+
+    <!-- FOOTER -->
+
+
 
     <footer class="index-footer">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-5">
-          <div class="footer-contact">
-            <h3>Россия</h3>
-            <a class="footer-tel" href="tel:+79111234565">+7 911 123-45-65</p>
-            <a class="footer-mail" href="mailto:info-ru@divingdahab.ru">info-ru@divingdahab.ru</a>
-            <h3>Египет</h3>
-            <p class="footer-adress">Blue Hole Road, 12, Dahab</p>
-            <a class="footer-tel" href="tel:+201245471289">+20 124 547-12-89</p>
-            <a class="footer-mail" href="mailto:info@divingdahab.ru<">info@divingdahab.ru</a>
-          </div>
+            <div class="footer-contact">
+              <h3>Россия</h3>
+              <a class="footer-tel" href="tel:+79111234565">+7 911 123-45-65</p>
+              <a class="footer-mail" href="mailto:info-ru@divingdahab.ru">info-ru@divingdahab.ru</a>
+              <h3>Египет</h3>
+              <p class="footer-adress">Blue Hole Road, 12, Dahab</p>
+              <a class="footer-tel" href="tel:+201245471289">+20 124 547-12-89</p>
+              <a class="footer-mail" href="mailto:info@divingdahab.ru<">info@divingdahab.ru</a>
+            </div>
           </div>
           <div class="col-xs-12 col-sm-7">
             <h3 class="form-header">Напишите нам</h3>
             <p>Оставьте ваши отзывы, пожелания или вопросы.</p>
-             <p> Мы обязательно ответим вам.</p>
-            <form action="">
-            <div class="form-data">
-              <label>Имя<input type="text"></label>
-              <p>
-              <label>e-mail<input type="email"></label>
-              </p>
-              <p>
-                <label>Сообщение<input type="text"></label>
-              </p>
+            <p> Мы обязательно ответим вам.</p>
+            <form action="" id="footer-form" class="footer-form">
+              <div class="form-data" >
+
+                <div class="form-item">
+                  <input type="text" placeholder="Имя" class="validate[required]">
+                </div>
+                <div class="form-item">
+                  <input type="text" placeholder="E-mail" class="validate[required,custom[email]]">
+                </div>
+                <div class="form-item">
+                  <input type="text" placeholder="Сообщение" class="validate[required]">
+                </div>
+
               </div>
               <button class="form-btn">Отправить</button>
             </form>
           </div>
         </div>
 
-<div class="footer-socials">
-        <div class="container">
-          <div class="row">
-            <p class="copyright-name col-xs-12 col-sm-6">© Diving Dahab, 2015</p>
-            <ul class="social-links col-xs-12 col-sm-6">
-              <li><a href="vk.com">VK</a></li>
-              <li><a href="instagram.com">IG</a></li>
-              <li><a href="plus.google.com">G+</a></li>
-            </ul>
+        <div class="footer-socials">
+          <div class="container">
+            <div class="row">
+              <p class="copyright-name col-xs-12 col-sm-6">© Diving Dahab, 2015</p>
+              <div class="col-xs-12 col-sm-6">
+                <ul class="social-links">
+                  <li><a class="icon-vkontakte" href="vk.com"></a></li>
+                  <li><a class="icon-instagram" href="instagram.com"></a></li>
+                  <li><a class="icon-gplus-squared" href="plus.google.com"></a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      </div>
     </footer>
 
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.validationEngine.min.js"></script>
+    <script src="js/jquery.validationEngine-ru.min.js"></script>
+
+    <script src="js/script.js"></script>
 
   </body>
 </html>
