@@ -410,8 +410,8 @@ address {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media (min-width: 768px) {
   .container {
@@ -431,29 +431,18 @@ address {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .row {
-  margin-left: -10px;
-  margin-right: -10px;
-  position: relative;
-  font-size: 0;
-  /* display: flex;*/
-  /*flex-wrap: wrap;*/
+  margin-left: -15px;
+  margin-right: -15px;
 }
-.row > [class*="col-"]{
-  float: none !important;
-  display: inline-block;
-  vertical-align: top;
-  font-size: 16px;
-}
-
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left;
@@ -1097,11 +1086,30 @@ address {
   display: table;
 }
 .clearfix:after,
-.dl-horizontal dd:after,
 .container:after,
 .container-fluid:after,
 .row:after {
   clear: both;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
 }
 .text-hide {
   font: 0/0 a;
@@ -1109,6 +1117,12 @@ address {
   text-shadow: none;
   background-color: transparent;
   border: 0;
+}
+.hidden {
+  display: none !important;
+}
+.affix {
+  position: fixed;
 }
 
 
@@ -1627,8 +1641,6 @@ body {
 .promo .container-fluid {
   margin-left: 0;
   margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .slogan {
@@ -1872,19 +1884,17 @@ li {
   top: 47%;
 }
 
-/*НЕ работает*/
-.about-img img:first-child{
-  margin-right: 2px;
-}
-
 .about-img {
   margin-bottom: 25px;
+}
+
+.about-img-thin {
+  padding: 5px;
 }
 
 .promo {
   text-align: center;
 }
-
 
 .promo-discription-courses,
 .promo-discription-places,
@@ -1934,7 +1944,7 @@ li {
   font-weight: 400;
   color: #fff;
   background-color: #13152e;
-  margin-right: 10px;
+  right: 15px;
 }
 
 .slogan h2 {
@@ -2102,6 +2112,208 @@ li {
   padding-bottom: 10px;
 }
 
+.nav-courses-link {
+  display: block;
+  background-color: #13152e;
+  line-height: 90px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+.nav-courses ul{
+  padding: 0;
+  margin: 0;
+}
+
+.nav-courses-link:before {
+  content: '';
+ display: inline-block;
+  width: 35px;
+  height: 33px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.nav-courses-link-beginner:before {
+   background-image: url(../pict/icon-dive-1.png);
+}
+.nav-courses-link-advanced:before {
+  background-image: url(../pict/icon-dive-2.png);
+}
+
+.nav-courses-link-special:before {
+  background-image: url(../pict/icon-dive-3.png);
+}
+
+.nav-courses-link-personal:before {
+  background-image: url(../pict/icon-dive-4.png);
+}
+
+.courses-name {
+  text-align: center;
+    background-color: #e86b0c;
+}
+
+.courses-name h1 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 90px;
+  margin-top: 35px;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.nav-courses-link:hover {
+  background-color: #e86b0c;
+  text-decoration: none;
+  color: #fff;
+}
+
+.cousres-numbers {
+  background-color: rgba(15, 54, 82, 0.7);
+  font-size: 0;
+  text-align: center;
+}
+
+.cousres-numbers span {
+    color: #fff;
+    font-size: 24px;
+    line-height: 45px;
+}
+
+.about-courses-text {
+  padding-top: 145px;
+}
+
+.about-courses-text span {
+ font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  background-color: #13152e;
+  padding: 0 5px 1px 5px;
+}
+
+.about-courses-text span:last-of-type {
+  margin-bottom: 12px;
+}
+.tabs {
+  text-align: center;
+}
+
+.tabs-list {
+  padding: 35px 0 15px;
+  list-style: none;
+}
+.tabs-link {
+  display: inline-block;
+}
+.tabs-link a {
+  display: block;
+  color: #949494;
+  text-decoration: none;
+  padding: 15px;
+  border: 1px solid #949494;
+}
+.tabs-link a:hover, .tabs-link.active a {
+  background-color: #13152e;
+  color: #fff;
+   border: 1px solid #13152e;
+}
+.tab-item {
+  display: none;
+}
+.tab-item.active {
+  display: block;
+}
+
+.tabs-content h2 {
+  font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    color: #e86b0c;
+    padding-bottom: 35px;
+}
+
+.tabs-content p {
+  font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    text-align: left;
+}
+
+.accordion {
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+   padding: 20px 0;
+  background-color: #e86b0c;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff;
+}
+
+.text {
+  padding: 10px;
+  display: none;
+  text-align: left;
+}
+.item.active .text {
+  display: block;
+}
+
+.promo-courses {
+ padding: 65px 0 50px;
+}
+
+.promo-courses h2 {
+      font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 24px;
+}
+
+.promo-courses p {
+  padding: 50px 0;
+  font-size: 18px;
+}
+
+.promo-btn {
+    background-color: #3b9efa;
+    color: #fff;
+    padding: 15px 60px;
+    font-size: 18px;
+}
+
+.footer-onecourse {
+  text-align: center;
+  padding-top: 35px;
+}
+
+.footer-onecourse li a {
+  color: #000;
+  font-size: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 768px) {
   .main-nav {
     display: block;
@@ -2145,9 +2357,13 @@ li {
     min-height: 350px;
     min-width: 260px;
   }
-  .team-block:nth-child(3),
-  .team-block:nth-child(4)  {
-    margin-right: 4px;
+  .team-block  {
+    padding: 5px;
+  }
+
+  .team .container {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .reviews {

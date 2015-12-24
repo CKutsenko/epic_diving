@@ -14,6 +14,48 @@ toggler.onclick = function(e) {
   mainNav.classList.toggle('show');
   }
 
+  // TABS
+
+var link_href;
+$('.tabs-link a').on('click', function(e){
+  e.preventDefault();
+
+  $(this)
+    .closest('.tabs-list')
+    .find('.tabs-link.active')
+    .removeClass('active');
+  $(this)
+   .closest('.tabs-link')
+   .addClass('active');
+
+  $(this)
+   .closest('.tabs')
+   .find('.tab-item.active')
+   .removeClass('active');
+  link_href = $(this).attr('href');
+  $(link_href).addClass('active');
+});
+
+
+
+// ACCORDION
+
+$('.title').on('click', function(){
+ if( $(this).closest('.item').is('.active') ){
+  $(this)
+    .closest('.accordion')
+    .find('.item')
+    .removeClass('active');
+  }
+  else {
+    $(this)
+     .closest('.accordion')
+     .find('.item')
+     .removeClass('active');
+    $(this).closest('.item').addClass('active')
+  }
+});
+
   // SWIPER
 
   var mySwiper = new Swiper ('.swiper-container', {
@@ -57,3 +99,5 @@ $(window).on('resize', function(){
       }
     }, 100);
 });
+
+

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -15,28 +16,38 @@
       <div class="header-bg">
         <div class="container">
           <div class="row">
-            <div class="col-xs-5 col-sm-8 col-lg-2">
+            <div class="col-xs-7 col-sm-9 col-lg-2">
               <div class="logo">
                 <a href="javascript:void(0)"><img src="img/logotype.png" alt="Логотип"></a>
               </div>
             </div>
-            <div class="col-xs-7 col-sm-2 col-lg-2 col-lg-push-8">
+
+            <div class="col-xs-5 col-sm-3 col-lg-2 col-lg-push-8">
               <div class="phone-btn">
-                <a href="tel:79111234565" class="phone-btn-light">+7 911 123-45-65</a>
+                <a href="tel:79111234565" class="">+7 911 123-45-65</a>
                 <p>
-                  <a href="tel:5471289" class="phone-btn-dark">547-12-89</a>
+                  <a href="tel:5471289" class="">547-12-89</a>
                 </p>
               </div>
             </div>
-            <nav class="col-sm-12 col-lg-8 col-lg-pull-2">
-              <ul class="nav  nav-wrapper list-inline">
-                <li class="nav-item  active"><a href="javascript:void(0)">Дайвинг</a></li>
-                <li class="nav-item"><a href="javascript:void(0)">Места</a></li>
-                <li class="nav-item"><a href="javascript:void(0)">Команда</a></li>
-                <li class="nav-item"><a href="javascript:void(0)">Проживание</a></li>
-                <li class="nav-item"><a href="javascript:void(0)">Контакты</a></li>
-              </ul>
-            </nav>
+
+            <a href="" id="toggler" class="container toggler-container visible-xs-block overflow-hidden">
+              <div class="toggler" >
+                <span>
+                </span>
+              </div>
+            </a>
+            <div class="col-xs-12 col-lg-8 col-lg-pull-2">
+              <nav class="main-nav" id="mainNav">
+                <ul>
+                  <li class="nav-item"><a href="">Дайвинг</a></li>
+                  <li class="nav-item"><a href="">Места</a></li>
+                  <li class="nav-item"><a href="">Команда</a></li>
+                  <li class="nav-item"><a href="">Проживание</a></li>
+                  <li class="nav-item"><a href="">Контакты</a></li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </div>
       </div>
@@ -50,13 +61,21 @@
       <!-- Courses Navigation -->
 
       <div class="nav-courses">
-        <div class="container">
+        <div class="container-fluid">
 
             <ul class="row">
-              <li class="col-xs-12 col-sm-3"><a href="javascript:void(0)">Для начинающих</a></li>
-              <li class="col-xs-12 col-sm-3"><a href="javascript:void(0)">Для продвинутых</a></li>
-              <li class="col-xs-12 col-sm-3"><a href="javascript:void(0)">Спецкурсы</a></li>
-              <li class="col-xs-12 col-sm-3"><a href="javascript:void(0)">Персональный дайвинг</a></li>
+              <li class="col-xs-12 col-sm-3">
+              <a class="nav-courses-link nav-courses-link-beginner" href="javascript:void(0)">Для начинающих</a>
+              </li>
+              <li class="col-xs-12 col-sm-3">
+              <a class="nav-courses-link nav-courses-link-advanced" href="javascript:void(0)">Для продвинутых</a>
+              </li>
+              <li class="col-xs-12 col-sm-3">
+              <a class="nav-courses-link nav-courses-link-special" href="javascript:void(0)">Спецкурсы</a>
+              </li>
+              <li class="col-xs-12 col-sm-3">
+              <a class="nav-courses-link nav-courses-link-personal" href="javascript:void(0)">Персональный дайвинг</a>
+              </li>
             </ul>
 
         </div>
@@ -65,26 +84,37 @@
 
       <!-- About courses -->
 
-      <dsection class="about-courses">
-        <div class="container">
+
           <div class="courses-name">
             <h1>Open Water Diver</h1>
           </div>
+           <section class="about-courses">
+        <div class="container">
           <div class="row cousres-numbers">
-            <div class="col-xs-6 col-sm-3">340 €</div>
-            <div class="col-xs-6 col-sm-3">7-8 дней</div>
-            <div class="col-xs-6 col-sm-3">28 часов</div>
-            <div class="col-xs-6 col-sm-3">7 занятий</div>
+            <div class="col-xs-6 col-sm-3">
+            <span>340 €</span>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+            <span>7-8 дней</span>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+            <span>28 часов</span>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+            <span>7 занятий</span>
+            </div>
           </div>
           <div class="row">
             <div class="col-xs-12 col-sm-9 col-sm-push-4 col-lg-6 col-lg-push-6">
-              <span>Начните свое обучение с этого курса,
-                чтобы узнать основы безопасного погружения
-                и получите свой первый сертификат дайвера PADI</span>
+            <div class="about-courses-text">
+              <span>Начните свое обучение с этого курса,</span><br>
+              <span>чтобы узнать основы безопасного погружения</span><br>
+              <span>и получите свой первый сертификат дайвера PADI</span>
+            </div>
             </div>
           </div>
         </div>
-      </sections
+      </section>
 
 
       <!-- More and more detail about courses -->
@@ -96,80 +126,115 @@
 
             <div class="col-xs-12 col-lg-6">
 
-              <div class="page_number">
-                <ul>
-                  <li><a href="javascript:void(0)">1</a></li>
-                  <li><a href="javascript:void(0)">2</a></li>
-                  <li><a href="javascript:void(0)">3</a></li>
-                  <li><a href="javascript:void(0)">4</a></li>
-                  <li><a href="javascript:void(0)">5</a></li>
-                  <li><a href="javascript:void(0)">6</a></li>
-                  <li><a href="javascript:void(0)">7</a></li>
+              <div class="tabs">
+                <ul class="tabs-list">
+                  <li class="tabs-link  active"><a href="#tab_01">1</a></li>
+                  <li class="tabs-link"><a href="#tab_02">2</a></li>
+                  <li class="tabs-link"><a href="#tab_03">3</a></li>
+                  <li class="tabs-link"><a href="#tab_04">4</a></li>
+                  <li class="tabs-link"><a href="#tab_05">5</a></li>
+                  <li class="tabs-link"><a href="#tab_06">6</a></li>
+                  <li class="tabs-link"><a href="#tab_07">7</a></li>
                 </ul>
-              </div>
 
-              <div>
+
+              <div class="tabs-content">
+              <div class="tab-item  active" id="tab_01">
                 <h2>Первое занятие</h2>
                 <p>За один-единственный урок можно не только узнать много нового и интересного, но и понять, войдет ли дайвинг в список ваших любимых занятий, или нет. В первую очередь, вы ознакомитесь с техникой безопасности , во время теоретической части вы узнаете основные базовые принципы и ознакомитесь с техникой подводного плавания.</p>
                 <p>После чего, вам предстоит совершить свое первое погружение
                   в закрытой воде под руководством опытного инструктора.</p>
               </div>
-
+              <div class="tab-item" id="tab_02">
+                <h2>Второе занятие</h2>
+                <p>За один-единственный урок можно не только узнать много нового и интересного, но и понять, войдет ли дайвинг в список ваших любимых занятий, или нет. В первую очередь, вы ознакомитесь с техникой безопасности , во время теоретической части вы узнаете основные базовые принципы и ознакомитесь с техникой подводного плавания.</p>
+                <p>После чего, вам предстоит совершить свое первое погружение
+                  в закрытой воде под руководством опытного инструктора.</p>
+              </div>
+              <div class="tab-item" id="tab_03">
+                <h2>Третье занятие</h2>
+                <p>За один-единственный урок можно не только узнать много нового и интересного, но и понять, войдет ли дайвинг в список ваших любимых занятий, или нет. В первую очередь, вы ознакомитесь с техникой безопасности , во время теоретической части вы узнаете основные базовые принципы и ознакомитесь с техникой подводного плавания.</p>
+                <p>После чего, вам предстоит совершить свое первое погружение
+                  в закрытой воде под руководством опытного инструктора.</p>
+              </div>
+              <div class="tab-item" id="tab_04">
+                <h2>Четвертое занятие</h2>
+                <p>За один-единственный урок можно не только узнать много нового и интересного, но и понять, войдет ли дайвинг в список ваших любимых занятий, или нет. В первую очередь, вы ознакомитесь с техникой безопасности , во время теоретической части вы узнаете основные базовые принципы и ознакомитесь с техникой подводного плавания.</p>
+                <p>После чего, вам предстоит совершить свое первое погружение
+                  в закрытой воде под руководством опытного инструктора.</p>
+              </div>
+              <div class="tab-item" id="tab_05">
+                <h2>Пятое занятие</h2>
+                <p>За один-единственный урок можно не только узнать много нового и интересного, но и понять, войдет ли дайвинг в список ваших любимых занятий, или нет. В первую очередь, вы ознакомитесь с техникой безопасности , во время теоретической части вы узнаете основные базовые принципы и ознакомитесь с техникой подводного плавания.</p>
+                <p>После чего, вам предстоит совершить свое первое погружение
+                  в закрытой воде под руководством опытного инструктора.</p>
+              </div>
+              <div class="tab-item" id="tab_06">
+                <h2>Шестое занятие</h2>
+                <p>За один-единственный урок можно не только узнать много нового и интересного, но и понять, войдет ли дайвинг в список ваших любимых занятий, или нет. В первую очередь, вы ознакомитесь с техникой безопасности , во время теоретической части вы узнаете основные базовые принципы и ознакомитесь с техникой подводного плавания.</p>
+                <p>После чего, вам предстоит совершить свое первое погружение
+                  в закрытой воде под руководством опытного инструктора.</p>
+              </div>
+              <div class="tab-item" id="tab_07">
+                <h2>Седьмое занятие</h2>
+                <p>За один-единственный урок можно не только узнать много нового и интересного, но и понять, войдет ли дайвинг в список ваших любимых занятий, или нет. В первую очередь, вы ознакомитесь с техникой безопасности , во время теоретической части вы узнаете основные базовые принципы и ознакомитесь с техникой подводного плавания.</p>
+                <p>После чего, вам предстоит совершить свое первое погружение
+                  в закрытой воде под руководством опытного инструктора.</p>
+              </div>
+             </div>
+            </div>
             </div>
 
 
             <div class="col-xs-12 col-lg-6">
 
-              <div class="about-courses-item equipment">
-                <div>
-                  <p>Снаряжение и гидрокостюм</p>
-                </div>
-                <div>
+              <ul class="accordion">
+                <li class="item  active">
+                  <h3 class="title">Снаряжение и гидрокостюм</h3>
+                <div class="text">
                   <p>На время прохождения курса Вам будет предоставлено все необходимое снаряжение.
                     Мы используем только самое новое оборудование ScubaPro и ScubaGear.</p>
-                </div>
-              </div>
+                 </div>
+               </li>
 
-              <div class="about-courses-item materials">
-                <div>
-                  <p>Учебные маткриалы</p>
-                </div>
-                <div>
+              <ul class="accordion">
+                <li class="item">
+                  <h3 class="title">Учебные материалы</h3>
+                <div class="text">
                   <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Залетают если толку по всей, пунктуация.</p>
                 </div>
-              </div>
+              </li>
 
-              <div class="about-courses-item storage">
-                <div>
-                  <p>Ячейка для хранения вещей</p>
-                </div>
-                <div>
+              <ul class="accordion">
+                <li class="item">
+                  <h3 class="title">Ячейка для хранения вещей</h3>
+                <div class="text">
                   <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Но маленький возвращайся агенство инициал если щеке большого!</p>
-                </div>
-              </div>
+                 </div>
+                </li>
 
-              <div class="about-courses-item insurance">
-                <div>
-                  <p>Страховка</p>
-                </div>
-                <div>
+              <ul class="accordion">
+                <li class="item">
+                  <h3 class="title">Страховка</h3>
+                <div class="text">
                   <p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Взобравшись заманивший маленький, всеми пояс, рыбными то, безопасную деревни использовало своих сбить одна буквенных мир.</p>
                 </div>
+               </li>
 
               </div>
             </div>
           </div>
         </div>
-      </div>
+
 
       <!-- Promo Courses -->
 
       <div class="promo-courses">
         <div class="container">
           <div class="col-xs-12">
-            <p>Хватит думать, пора нырять!</p>
-            <p>Open Water Diver 340€ / 7 занятий</p>
-            <div><a href="javascript:void(0)">Записаться</a></div>
+            <h2>Хватит думать, пора нырять!</h2>
+            <p>Open Water Diver <br>340€ / 7 занятий</p>
+            <div><a class="promo-btn" href="javascript:void(0)">Записаться</a></div>
           </div>
         </div>
       </div>
@@ -179,18 +244,27 @@
 
     <!-- ----------------------------------------------------------------------------Footer---------------------------------------------------------------------------- -->
 
-    <footer>
+    <footer class="footer-onecourse">
       <div class="container">
         <div class="row">
           <p class="copyright-name col-xs-12 col-sm-6">© Diving Dahab, 2015</p>
-          <div class="social-links col-xs-12 col-sm-6">
-            <a href="vk.com">VK</a>
-            <a href="instagram.com">IG</a>
-            <a href="plus.google.com">G+</a>
+          <div class="col-xs-12 col-sm-6">
+             <ul class="social-links">
+                  <li><a class="icon-vkontakte" href="vk.com"></a></li>
+                  <li><a class="icon-instagram" href="instagram.com"></a></li>
+                  <li><a class="icon-gplus-squared" href="plus.google.com"></a></li>
+                </ul>
           </div>
         </div>
       </div>
     </footer>
 
+
+
+ <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/jquery.validationEngine.min.js"></script>
+    <script src="js/jquery.validationEngine-ru.min.js"></script>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
