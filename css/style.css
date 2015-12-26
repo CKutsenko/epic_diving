@@ -2379,6 +2379,10 @@ li {
     text-align: center;
   }
 
+  .page-header {
+    background-image: url(../img/bg_header_index.jpg);
+  }
+
   .main-nav ul {
     padding-left: 15px;
   }
@@ -2471,5 +2475,28 @@ li {
 .social-links {
   text-align: right;
   padding-bottom: 15px;
+  }
+
+ .about-courses {
+  background-image: url(../img/bg_promo-course.jpg);
+  }
+
+  .cousres-numbers {
+  background: none;
+  }
+
+  .cousres-numbers span {
+    line-height: 70px;
 }
+}
+
+@media (min-width: 1200px){
+.review-name {
+    left: 15px;
+}
+
+.index-footer {
+    background-image: url(../img/bg_index_footer.jpg);
+}
+
 }
