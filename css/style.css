@@ -236,11 +236,11 @@ a {
   color: #337ab7;
   text-decoration: none;
 }
-a:hover,
+/*a:hover,
 a:focus {
   color: #23527c;
   text-decoration: underline;
-}
+}*/
 a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
@@ -438,6 +438,7 @@ address {
   margin-left: -15px;
   margin-right: -15px;
 }
+
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
@@ -1596,17 +1597,17 @@ src: url('../font/fontello.svg?3138786#fontello') format('svg');
   padding: 10px;
 }
 
+.social-links li a:hover {
+ color: #3b9efa;
+}
 
-----------------------------------------------------------------------------*\
+
+/*----------------------------------------------------------------------------*\
 Свои стили
-\*----------------------------------------------------------------------------
+\*----------------------------------------------------------------------------*/
 
 body {
   font-family: "Lato", sans-serif;
-} */
-
-.page-header-top {
-  min-height: 100px;
 }
 
 .header-slogan p {
@@ -1686,7 +1687,7 @@ body {
 }
 
 .about-courses {
-  background-image: url(../img/bg_promo-course.jpg);
+  background-image: url(../img/bg_promo-course-320.jpg);
   color: white;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1799,6 +1800,10 @@ li {
   color: #fff;
   background-color: #4ea8fa;
   margin-bottom: 3px;
+}
+
+.phone-btn a:hover {
+  background-color: #43bbf9;
 }
 
 .header-slogan h1{
@@ -2112,9 +2117,16 @@ li {
   padding-bottom: 10px;
 }
 
+
+.page-header-onecourse {
+ padding-top: 10px;
+}
+.nav-courses-link li {
+  background-color: #13152e;
+}
+
 .nav-courses-link {
   display: block;
-  background-color: #13152e;
   line-height: 90px;
   text-align: center;
   color: #fff;
@@ -2167,7 +2179,7 @@ li {
   color: #fff;
 }
 
-.nav-courses-link:hover {
+.nav-courses li:hover {
   background-color: #e86b0c;
   text-decoration: none;
   color: #fff;
@@ -2200,6 +2212,11 @@ li {
 .about-courses-text span:last-of-type {
   margin-bottom: 12px;
 }
+
+.courses-detail ul{
+  padding-top: 35px;
+}
+
 .tabs {
   text-align: center;
 }
@@ -2215,7 +2232,7 @@ li {
   display: block;
   color: #949494;
   text-decoration: none;
-  padding: 15px;
+  padding: 9px 15px;
   border: 1px solid #949494;
 }
 .tabs-link a:hover, .tabs-link.active a {
@@ -2255,10 +2272,35 @@ li {
 
 .title {
   margin: 0;
-   padding: 20px 0;
-  background-color: #e86b0c;
+   padding: 20px 0 20px 10px;
+  background-color: #eeeeee;
   cursor: pointer;
   font-size: 18px;
+  color: #949494;
+  text-align: left;
+}
+
+.title:before,
+.active .title:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: right center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.title:before {
+  background-image: url(../pict/plus.png);
+}
+.active .title:before{
+  background-image: url(../pict/minus.png);
+}
+
+.active .title{
+  background-color: #e86b0c;
   color: #fff;
 }
 
@@ -2288,10 +2330,10 @@ li {
 }
 
 .promo-btn {
-    background-color: #3b9efa;
-    color: #fff;
-    padding: 15px 60px;
-    font-size: 18px;
+  background-color: #3b9efa;
+  color: #fff;
+  padding: 15px 60px;
+  font-size: 18px;
 }
 
 .footer-onecourse {
@@ -2308,11 +2350,23 @@ li {
 
 
 
+@media (min-width: 358px) {
+.container {
+    width: 340px;
+  }
+}
 
+@media (min-width: 826px) {
+  .container {
+    width: 808px;
+  }
+}
 
-
-
-
+@media (min-width: 1200px) {
+  .container {
+    width: 1150px;
+  }
+}
 
 @media (min-width: 768px) {
   .main-nav {
