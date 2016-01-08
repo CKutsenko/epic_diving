@@ -1587,9 +1587,11 @@ src: url('../font/fontello.svg?3138786#fontello') format('svg');
 .social-links li{
   display: inline-block;
 }
+
 .social-links {
   padding-left: 0;
 }
+
 .social-links li a{
   color: #fff;
   font-size: 24px;
@@ -1714,8 +1716,6 @@ body {
 li {
   list-style-type: none;
 }
-
-
 
 .toggler-container {
   background-color: rgba(255,255,255,.9);
@@ -2076,30 +2076,32 @@ li {
 .footer-form input:focus{
   outline: none;
 }
-  .footer-form input::-moz-placeholder {
-    color: #fff;
-  }
 
-  .footer-form input::-webkit-input-placeholder {
-    color: #fff;
-  }
+.footer-form input::-moz-placeholder {
+  color: #fff;
+}
 
-  .footer-form input:-ms-input-placeholder {
-    color: #fff;
-  }
+.footer-form input::-webkit-input-placeholder {
+  color: #fff;
+}
 
-  .footer-form input::-ms-input-placeholder {
-    color: #fff;
-  }
+.footer-form input:-ms-input-placeholder {
+  color: #fff;
+}
 
-  .footer-form input::placeholder {
-    color: #fff;
-  }
+.footer-form input::-ms-input-placeholder {
+  color: #fff;
+}
+
+.footer-form input::placeholder {
+  color: #fff;
+}
 
 .footer-form .form-btn {
   display: block;
   margin: 20px auto;
 }
+
 .form-btn {
   background-color: #3b9efa;
   border: none;
@@ -2117,10 +2119,10 @@ li {
   padding-bottom: 10px;
 }
 
-
 .page-header-onecourse {
  padding-top: 10px;
 }
+
 .nav-courses-link li {
   background-color: #13152e;
 }
@@ -2134,6 +2136,7 @@ li {
   font-weight: bold;
   font-size: 18px;
 }
+
 .nav-courses ul{
   padding: 0;
   margin: 0;
@@ -2153,6 +2156,7 @@ li {
 .nav-courses-link-beginner:before {
    background-image: url(../pict/icon-dive-1.png);
 }
+
 .nav-courses-link-advanced:before {
   background-image: url(../pict/icon-dive-2.png);
 }
@@ -2225,9 +2229,11 @@ li {
   padding: 35px 0 15px;
   list-style: none;
 }
+
 .tabs-link {
   display: inline-block;
 }
+
 .tabs-link a {
   display: block;
   color: #949494;
@@ -2235,29 +2241,32 @@ li {
   padding: 9px 15px;
   border: 1px solid #949494;
 }
+
 .tabs-link a:hover, .tabs-link.active a {
   background-color: #13152e;
   color: #fff;
    border: 1px solid #13152e;
 }
+
 .tab-item {
   display: none;
 }
+
 .tab-item.active {
   display: block;
 }
 
 .tabs-content h2 {
   font-family: 'Roboto Slab', serif;
-    font-size: 24px;
-    color: #e86b0c;
-    padding-bottom: 35px;
+  font-size: 24px;
+  color: #e86b0c;
+  padding-bottom: 35px;
 }
 
 .tabs-content p {
   font-family: 'Roboto Slab', serif;
-    font-size: 18px;
-    text-align: left;
+  font-size: 18px;
+  text-align: left;
 }
 
 .accordion {
@@ -2272,7 +2281,7 @@ li {
 
 .title {
   margin: 0;
-   padding: 20px 0 20px 10px;
+  padding: 20px 0 20px 10px;
   background-color: #eeeeee;
   cursor: pointer;
   font-size: 18px;
@@ -2295,6 +2304,7 @@ li {
 .title:before {
   background-image: url(../pict/plus.png);
 }
+
 .active .title:before{
   background-image: url(../pict/minus.png);
 }
@@ -2309,6 +2319,7 @@ li {
   display: none;
   text-align: left;
 }
+
 .item.active .text {
   display: block;
 }
@@ -2318,10 +2329,10 @@ li {
 }
 
 .promo-courses h2 {
-      font-family: 'Roboto Slab', serif;
-    font-weight: 400;
-    line-height: 30px;
-    font-size: 24px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 400;
+  line-height: 30px;
+  font-size: 24px;
 }
 
 .promo-courses p {
@@ -2345,9 +2356,6 @@ li {
   color: #000;
   font-size: 26px;
 }
-
-
-
 
 
 @media (min-width: 358px) {
@@ -2415,6 +2423,7 @@ li {
     min-height: 350px;
     min-width: 260px;
   }
+
   .team-block  {
     padding: 5px;
   }
@@ -2455,48 +2464,48 @@ li {
   .index-footer {
     background-image: url(../img/bg_index_footer_768.jpg);
   }
+
   .form-header {
     padding-top: 100px;
   }
 
-.footer-contact h3 {
-  padding-top: 2px;
-}
-
-.footer-contact {
-  border: none;
-}
-
-.copyright-name{
-  text-align: left;
-  padding: 17px;
-}
-
-.social-links {
-  text-align: right;
-  padding-bottom: 15px;
+  .footer-contact h3 {
+    padding-top: 2px;
   }
 
- .about-courses {
-  background-image: url(../img/bg_promo-course.jpg);
+  .footer-contact {
+    border: none;
+  }
+
+  .copyright-name{
+    text-align: left;
+    padding: 17px;
+  }
+
+  .social-links {
+    text-align: right;
+    padding-bottom: 15px;
+  }
+
+  .about-courses {
+    background-image: url(../img/bg_promo-course.jpg);
   }
 
   .cousres-numbers {
-  background: none;
+    background: none;
   }
 
   .cousres-numbers span {
     line-height: 70px;
-}
+  }
 }
 
 @media (min-width: 1200px){
-.review-name {
+  .review-name {
     left: 15px;
 }
 
-.index-footer {
+  .index-footer {
     background-image: url(../img/bg_index_footer.jpg);
-}
-
+  }
 }
